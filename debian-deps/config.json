@@ -1,0 +1,14 @@
+{
+  "log_file": "/var/log/tcp-mqtt-forwarder/app.log",
+  "log_format": "text",
+  "debug": false,
+  "tcp_host": "0.0.0.0:3333",
+  "mqtt_broker": "tcp://127.0.0.1:1883",
+  "mqtt_user": "username",
+  "mqtt_password": "password",
+  "mqtt_topic": "tcpmqtt/forwarder",
+  "mqtt_client_id": "tcp-mqtt-forwarder",
+  "mqtt_clean_session": true,
+  "mqtt_autoreconnect": true,
+  "mqtt_qos": 2
+}
