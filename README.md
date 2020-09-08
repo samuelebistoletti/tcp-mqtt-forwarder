@@ -1,5 +1,7 @@
 # TCP-MQTT Forwarder
 
+Simple utility that forwards TCP incoming payloads to a MQTT server over the specified topic.
+
 ## Quick start in development mode
 
 You can launch the server in dev mode with Foreman utility here https://github.com/ddollar/foreman. After Foreman install simply issue `foreman start` command in the local folder to start the server.
