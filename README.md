@@ -16,7 +16,7 @@ Simply issue `make deb` command here.
 After debian package install you will find the json file at the following path:
 
 ```sh
-/etc/tcp-mqtt-forwarder/
+/etc/tcp-mqtt-forwarder/config.json
 ```
 
 The server is managed by a SystemD unit, you can control the service with:
