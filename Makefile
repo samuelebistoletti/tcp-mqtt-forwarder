@@ -48,7 +48,6 @@ deb: clean-dir all
 		m4 -D DEB_ARCH=$$dir_arch -D DEB_VERSION=$(VERSION) -D DEB_PROJECT=$(BIN) $(DEPS_DIR)/postinst.m4 > $(DIST_DIR)/$(BIN)-$(VERSION)_$${dir_arch}/DEBIAN/postinst 				   && \
 		m4 -D DEB_ARCH=$$dir_arch -D DEB_VERSION=$(VERSION) -D DEB_PROJECT=$(BIN) $(DEPS_DIR)/preinst.m4 > $(DIST_DIR)/$(BIN)-$(VERSION)_$${dir_arch}/DEBIAN/preinst 				   && \
 		m4 -D DEB_ARCH=$$dir_arch -D DEB_VERSION=$(VERSION) -D DEB_PROJECT=$(BIN) $(DEPS_DIR)/prerm.m4 > $(DIST_DIR)/$(BIN)-$(VERSION)_$${dir_arch}/DEBIAN/prerm 					   && \
-		m4 -D DEB_ARCH=$$dir_arch -D DEB_VERSION=$(VERSION) -D DEB_PROJECT=$(BIN) $(DEPS_DIR)/postrm.m4 > $(DIST_DIR)/$(BIN)-$(VERSION)_$${dir_arch}/DEBIAN/postrm 					   && \
 		cp $(DEPS_DIR)/config.json $(DIST_DIR)/$(BIN)-$(VERSION)_$${dir_arch}/etc/$(BIN)/config.json                                                                  			   && \
 		chmod -R 0755 $(DIST_DIR)/$(BIN)-$(VERSION)_$${dir_arch}/                                                                                                       			   && \
 		chmod 0644 $(DIST_DIR)/$(BIN)-$(VERSION)_$${dir_arch}/DEBIAN/conffiles                                                                                          		       && \
